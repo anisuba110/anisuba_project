@@ -251,6 +251,7 @@ aside{
 .content-area{
     border-top: 3px solid #4F4F4F;
     border-bottom:3px solid #4F4F4F;
+    background-color: #FFF;
 }
 .main-area{
     width: 66%;
