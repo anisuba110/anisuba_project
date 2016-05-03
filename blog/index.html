@@ -1,4 +1,4 @@
-<!DOCType html>
+<!DOCType html ng-app="asApp">
     <head>
         <meta charset="utf-8">
         <title>AniSuba Project</title>
@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-route.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
         <script type="text/javascript" src="js/declarativeToggle.js"></script>
     </head>
@@ -22,87 +25,13 @@
                   <nav class="site-nav">
                       <ul class="group">
                           <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i><br>home</a></li>
-                          <li><a href="#"><i class="fa fa-diamond" aria-hidden="true"></i><br>about</a></li>
-                          <li><a href="#"><i class="fa fa-rocket" aria-hidden="true"></i><br>project</a></li>
+                          <li><a href="#/about"><i class="fa fa-diamond" aria-hidden="true"></i><br>about</a></li>
+                          <li><a href="#/project"><i class="fa fa-rocket" aria-hidden="true"></i><br>project</a></li>
                       </ul>
                   </nav>
           </div> 
         </header>  
-          <div class="content-area group">
-            <div class="main-area">
-                <article>
-                    <div class="good-point">
-                        <div class="article-title">
-                            <h3>今週のグッときた1コマ集</h3>
-                        </div>
-
-                        <div class="cycle-slideshow" data-cycle-slides=".slide">
-                            
-                            <span class="cycle-prev">&laquo;</span>
-                            <span class="cycle-next">&raquo;</span>
-                            <span class="cycle-pager"></span>
-                            
-                            <div class="slide">
-                                <img src="img/megumin.jpg" alt="megumin">
-                                <div class="slide-text">
-                                    <h2>我が名はめぐみん！</h2>
-                                    <p>『この素晴らしい世界に祝福を』第7話</p>
-                                </div>
-                            </div>
-                            
-                            <div class="slide">
-                                <img src="img/mayoiga.jpg" alt="mayoiga">
-                                <div class="slide-text">
-                                    <h2>知らない・・・。</h2>
-                                    <p>『迷い家』第4話</p>
-                                </div>
-                            </div>
-                            
-                            <div class="slide">
-                                <img src="img/netoge.jpg" alt="netoge">
-                                <div class="slide-text">
-                                    <h2>いやぁぁぁアァァァァァン</h2>
-                                    <p>『ネトゲの嫁は女の子じゃないと思った？』第4話</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p>ここにメインコンテンツが入ります。ここにメインコンテンツが入ります。ここにメインコンテンツが入ります。<span data-toggle-target=".full-text1">...(続きを読む)</span></p>
-                            <div class="full-text1">
-                                <p>ここから続きです。ここにメインコンテンツが入ります。vここにメインコンテンツが入ります。ここにメインコンテンツが入ります。ここにメインコンテンツが入ります。ここにメインコンテンツが入ります。ここにメインコンテンツが入ります。ここにメインコンテ  す。ここにメインコンテンツが入ります。ここにメインコンテンツが入ります。</p>
-                            </div>
-                    </div>
-                </article>
-                
-                 <div class="live-info"> 
-                     <span>ライブ情報</span><p>
-                         ここにメインコンテンツが入ります。ここにメインコンテンツが入ります。ここにメインコンテンツが入ります。ここにメインコンテンツが入ります。</p>
-                       </div>
-                
-                <div class="info-box hide-small">
-                    <h5>memo</h5>
-                    <p>Angular 2.0を初めて触ってみたけど、わからんなー。</p>
-                </div>                      
-            </div>
-              
-            <aside class="side-bar">
-                 <h3>更新情報</h3>
-                 <ul class="update-info">
-                     <li>アニメ情報更新</li>
-                     <li>開発情報更新</li>
-                     <li>ライブ情報更新</li>
-                 </ul>
-                 <br><br><br>
-                 <h3>カテゴリ</h3>
-                 <ul class="article-category">
-                     <li>アニメ (2)</li>
-                     <li>ライブ (1)</li>
-                     <li>開発 (1)</li>
-                 </ul>
-                 <br><br><br>
-                 <a class="twitter-timeline" href="https://twitter.com/anisuba110" data-widget-id="726726782330654720">@anisuba110さんのツイート</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </aside>
-            <div class="fix"></div>
+        <div ng-view></div>
         <footer>
             &copy; 2016 AniSuba Project
         </footer>

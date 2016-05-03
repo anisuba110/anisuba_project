@@ -104,12 +104,16 @@ aside{
     background-color: #FFF;
     box-shadow:9px 11px 22px -5px rgba(0,0,0,.7);
 }
-.side-bar h3{
-	padding: 1em;
+.side-bar .sub-info{
+	padding: 0.1em 0.5em;
 	border: 3px solid forestgreen;
     color: forestgreen;
 	border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
 }
+.side-bar .sub-info h3{
+    text-decoration: underline;
+}
+
 .container{
     overflow: hidden;
 }
