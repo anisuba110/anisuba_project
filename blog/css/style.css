@@ -7,6 +7,7 @@ body{
     padding: 45px 20px 15px 20px;
     max-width: 960px;
     margin: 0 auto;
+    background-image: url("../img/tileable_wood_texture.png");
 }
 img{
     max-width: 100%;
@@ -250,7 +251,6 @@ aside{
 .content-area{
     border-top: 3px solid #4F4F4F;
     border-bottom:3px solid #4F4F4F;
-    background-image: url("../img/tileable_wood_texture.png");
 }
 .main-area{
     width: 66%;
